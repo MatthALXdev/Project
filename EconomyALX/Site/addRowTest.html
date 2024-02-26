@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord - RFC</title>
+    <link rel="stylesheet" href="/Site/css/normalize.css" />
+    <link rel="stylesheet" href="/Site/css/registreCHP.css" />
+    <script src="/Site/js/jquery-3.4.1.min.js"></script>
+    <script src="/Site/js/buttonjquery.js" defer></script>
+    <script src="/Site/js/javascript.js" defer></script>
+</head>
+
+<body>
+    <header id="mainHeader"><!--HEADER-->
+        <img src="/Site/image/Businessman-Pointing-To-Graph-On-Monitor.svg" alt="Logo CHP" id="logoSite">
+        <h1>Registre des finances CHP</h1>
+        <nav id="mainNav">
+            <h1 class="accessibility">Menu</h1>
+            <p class="accessibility"><a href="pageContent" title="Aller au contenue principal de cette page">Passer le
+                    menu </a></p>
+            <ul>
+                <li><a href="/Site/index.html" title="Accéder à la page d'accueil, tableau de bord">Tableau de bord</a></li>
+                <li><a href="/Site/details.html" title="Accéder à la page des détails">Détails du mois</a></li>
+                <li><a href="/Site/templates.html" title="Accéder à la page de gestion des templates">Gestion des trames</a>
+                </li>
+                <li><a href="/Site/archives.html" title="Accéder aux archives">Archive</a></li>
+                <li><a href="/Site/prévisions.html" title="Accéder aux prévisions">Prévision</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle"><img src="/Site/image/hamburger.svg" alt="Ouvrir / Fermer le menu" />
+    </header><!--HEADER END-->
+    <main id="pageContent" class="detailsPageContent"><!--MAIN-->
+        <div id="addButton"><!--addButton-->
+            <a href='#' onclick='addNavContainer()'><img id="menuAdd" src="/Site/image/add-button.png"
+                    alt="Ouvrir / Fermer le menu" /></a>
+            <div id="addNavContainer">
+                <nav id="addNav">
+                    <ul>
+                        <li><a href='#'>Ajouter une charge</a></li>
+                        <li><a href='#'>Ajouter un achat d'essence</a></li>
+                        <li><a href='#'>Ajouter un achat d'alimentation</a></li>
+                        <li><a href='#'onclick='addNewHs()'>Ajouter un achat hors budget</a></li>
+                        <li><a href='#'>Ajouter un bénéfice</a></li>
+                        <li><a href='#'>Faire une réugularisation</a></li>
+                        <li><a href='#' onclick='addNavContainer()'>Fermer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <form id="frmAddRow" action="#">
+            <div>
+                <label for="lbl">Libellé</label>
+                <input type="text" name="lbl" id="lbl">
+            </div>
+            <div>
+                <label for="mtnt">Montant</label>
+                <input type="number" name="mtnt" id="mtnt">
+            </div>
+            <div>
+                <label for="cpt">Compte</label>
+                <!--<input type="text" name="cpt" id="cpt">-->
+                <select></select>
+            </div>
+            <div>
+                <label for="achDate">Date d'achat</label>
+                <input type="date" name="achDate" id="achDate">
+            </div>
+            <div>
+                <label for="prelDate">Date de prelevement</label>
+                <input type="date" name="prelDate" id="prelDate">
+            </div>
+            <div>
+                <label for="cat">Catégorie</label>
+                <input type="text" name="cat" id="cat">
+            </div>
+            <div>
+                <label for="etat">Etat</label>
+                <!--<input type="text" name="etat" id="etat">-->
+                <select></select>
+            </div>
+        </form>
+        <table class="table4">
+            <thead>
+                <tr>
+                    <th>ID LIGNE</th>
+                    <th>LBL</th>
+                    <th>MTNT</th>
+                    <th>CPT</th>
+                    <th>DATE ACHT</th>
+                    <th>DATE PLVT</th>
+                    <th>CAT</th>
+                    <th>ETAT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ID LIGNE</td>
+                    <td>L2C2</td>
+                    <td>L2C3</td>
+                    <td>L2C4</td>
+                    <td>L2C5</td>
+                    <td>L2C6</td>
+                    <td>L2C7</td>
+                    <td>L2C8</td>
+                </tr>
+                <tr>
+                    <td>ID LIGNE</td>
+                    <td>L2C2</td>
+                    <td>L2C3</td>
+                    <td>L2C4</td>
+                    <td>L2C5</td>
+                    <td>L2C6</td>
+                    <td>L2C7</td>
+                    <td>L2C8</td>
+                </tr>
+                <tr>
+                    <td>ID LIGNE</td>
+                    <td>L2C2</td>
+                    <td>L2C3</td>
+                    <td>L2C4</td>
+                    <td>L2C5</td>
+                    <td>L2C6</td>
+                    <td>L2C7</td>
+                    <td>L2C8</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL 1</td>
+                    <td>TOTAL 2</td>
+                    <td>TOTAL 3</td>
+                    <td>TOTAL 4</td>
+                    <td>TOTAL 5</td>
+                    <td>TOTAL 6</td>
+                    <td>TOTAL 7</td>
+                    <td>TOTAL 8</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer id="mainFooter">
+        <p>&copy; Copyright Matthieu Alix - 2023</p>
+    </footer>
+</body>
+
+</html>
