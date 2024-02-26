@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application de budget</title>
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="/stylesheet.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <!-- Budget -->
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="erreur-budget">
+                        La valeur ne peut pas être vide ou négative
+                    </p>
+                    <input type="number" id="montant-total" placeholder="Entrez le montant total" />
+                    <button class="submit" id="bouton-montant-total">Définir le budget</button>
+                </div>
+
+                <!-- Dépenses -->
+                <div class="user-amount-container">
+                    <h3>Dépenses</h3>
+                    <p class="hide error" id="erreur-titre-produit">
+                        Les valeurs ne peuvent pas être vides
+                    </p>
+                    <input type="text" class="titre-produit" id="titre-produit"
+                        placeholder="Entrez le titre du produit" />
+                    <input type="number" id="montant-utilisateur" placeholder="Entrez le coût du produit" />
+                    <button class="submit" id="verifier-montant">Vérifier le montant</button>
+                </div>
+            </div>
+            <!-- Résultat -->
+            <div class="output-container flex-space">
+                <div>
+                    <p>Budget total</p>
+                    <span id="montant">0</span>
+                </div>
+                <div>
+                    <p>Dépenses</p>
+                    <span id="valeur-depenses">0</span>
+                </div>
+                <div>
+                    <p>Solde</p>
+                    <span id="montant-solde">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- Liste -->
+        <div class="list">
+            <h3>Liste des dépenses</h3>
+            <div class="list-container" id="liste"></div>
+        </div>
+        <div class="testarea output-container flex-space">
+            <h3>Zone de test</h3>
+            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo cumque! 
+                Officiis nobis reprehenderit ratione eum consequuntur harum ipsam sequi error quae similique,
+                esse quisquam nisi magnam iste suscipit quam!</div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
