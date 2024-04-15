@@ -222,7 +222,7 @@ img {
 #pageContent {
     display: grid;
     flex-direction: column;
-    background: url(/image/landscape.png) center center / cover no-repeat fixed;
+    background: url(../image/landscape.png) center center / cover no-repeat fixed;
     padding: 65px 10px;
     min-height: 100vh;
     gap: 5px;
