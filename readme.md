@@ -2,37 +2,33 @@
 
 _Ce répertoire GitHub rassemble les différents projets personnels que je développe en parallèle de ma formation de Développement web et web mobile. Chaque projet est listé ci-dessous avec une brève description._
 
-- **Projet 1 - Portfolio personnel**
+1. **Projet 1 - Application de gestion de compte**
 
-_Description_ : Un site web présentant mon parcours, mes compétences et mes projets.
+_**Description**_ : Un outil permettant d'organiser ses finances en catégorisant les dépenses et affichant les dépenses à venir ainsi que le solde restant, de manière efficace.
 
-_Etat_ : En cours de design.
+_**Etat**_ : Premier jet de page HTML/CSS créé.
 
-<!-- Image de personal portfolio website showcasing skills and projectsS'ouvre dans une nouvelle fenêtre -->
-<!-- teamzproductdesign3.medium.com -->
-<!-- personal portfolio website showcasing skills and projects -->
+_**Nom(s) de dossier(s)**_ :
 
-_Technologies utilisées_ : HTML, CSS, JavaScript, <!--[Nom d'un framework CSS] -->
+- **EconomyALX** est le premiers projet que j'ai créé.
+- **Budget App** est une ébauche de site ayant une approche différente.
+
+_**Technologies utilisées**_ : HTML, CSS, JavaScript et d'autre à venir
 
 <!-- Lien vers le projet :  -->
 
-- **Projet 2 - Application de gesion de compte**
+2. **Projet 2 - Portfolio personnel**
 
-_Description_ : Un outil permettant d'organiser ses fiances en catégorisant les dépenses et montrant les charges à payer ainsi que le solde restant, de manière efficace.
+_**Description**_ : Un site web présentant mon parcours, mes compétences et mes projets.
 
-_Etat_ : Premier jet de page html/css créer.
+**_Etat_** : Initialisation.
 
-_Technologies utilisées_ : HTML, CSS, JavaScript, <!-- [Nom d'un CMS] -->
+_**Nom(s) de dossier(s)**_ :
 
-<!-- Lien vers le projet : https://github.com/topics/travel-blog -->
+- **Mat a life - Wat a life**
 
-<!-- - **Projet 3 -** -->
+**_Technologies utilisées_** : HTML, CSS, JavaScript et d'autre à venir
 
-<!-- _Description_ : Un outil permettant de créer, organiser et suivre les tâches quotidiennes de manière efficace.
-Image de task management app with todo lists and progress trackingS'ouvre dans une nouvelle fenêtre
-www.businessprocessincubator.com
-task management app with todo lists and progress tracking
-Technologies utilisées : React Native, [Nom d'une base de données]
-Lien vers le projet : https://github.com/topics/task-management -->
+<!-- Lien vers le projet :  -->
 
 N'hésitez pas à explorer chaque projet pour en savoir plus sur leur développement et leur fonctionnalité. Si vous avez des questions ou des suggestions, n'hésitez pas à me contacter!
